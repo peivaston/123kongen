@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="impEv.css">
+    </head>
+
+    <body>
+
+            <button class="open-button" onclick="openImpEv()">Important Events</button>
+
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h3>Important information</h3>
+
+                <!--<label for="msg"><b>Message</b></label> -->
+                <textarea placeholder="Write any important information/details here.." name="msg" required></textarea>
+
+                <!--<button type="submit" class="btn">Send</button> -->
+                <button type="button" class="btn cancel" onclick="closeImpEv()">Close</button>
+                </form>
+            </div>
+
+    <script src="impEv.js"></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+/*****************************************
+* Styling for the Important Events popup form
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Button used to open the IE form  */
+.open-button {
+    background-color: #EBA966;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 0px;
+    right: 28px;
+    width: 275px;
+    font-weight: bold;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 5px solid #becbcf;
+    border-radius: 12px;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 350px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #ECBCB0;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
